@@ -1,0 +1,23 @@
+input[type=text], input[type=email], input[type=number] , select, input[type=date] {
+    width: 450px;
+}
+
+.form {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.form__body__fields-layout > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__body__label__radio-first {
+    margin-top: 0px;
+    margin-left: -25px;
+}
+
+.form__body__fields-layout > div > div > input {
+    margin-left: 25px;
+    margin-top: 0;
+}

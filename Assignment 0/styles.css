@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-size: large;
+}
+
+.outer-box {
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.form {
+    /* position: sticky;
+    inset: auto auto; */
+    /* position: sticky; */
+    /* top: 0; */
+    padding: 20px;
+    /* height: 100%; */
+    background-color: #20bac2;
+    /* position: fixed; */
+    /* inset: 0 0; */
+}
+
+.form__title__inner-box {
+    padding: 10px;
+    border: 5px double black;
+}
+
+.form__title__inner-box__content {
+    text-align: center;
+    font-weight: 700;
+}
+
+.form__body {
+    margin-top: 20px;
+}
+
+label {
+    font-size: small;
+    font-weight: 700;
+}
+
+
+label > span {
+    font-weight: 500;
+}
+
+.form__body__fields-layout {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.form__body__fields-layout > label {
+    flex: 0.3;
+}
+
+.form__body__fields-layout > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__body__fields-layout > input, .form__body__fields-layout > select, .form__body__fields-layout > div {
+    display: flex;
+    flex: 0.7;
+}
+
+input[type=radio] {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.form__body__label__radio-first {
+    margin-top: -10px;
+}
+
+.form__body__fields-layout > div > div > input {
+    margin-top: 10px;
+}
+
+input[type=text], input[type=email], input[type=number] , select, input[type=date] {
+    width: 250px;
+}
+
+input::placeholder {
+    font-size: smaller;
+}
+
+.form__body__submit {
+    margin-top: 25px;
+}
+
+button[type=submit] {
+    background-color: transparent;
+    border: 0;
+    text-decoration: underline;
+    color: rgb(24, 40, 61);
+}
+
+button[type=reset] {
+    margin-left: 10px;
+    padding: 2px 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.form__action {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    margin-top: 20px;
+    padding: 40px 80px;
+}
+
+.form__action > div > a {
+    color: red;
+}
+
+.form__action > div {
+    margin-top: 10px;
+}
+
+/*css for table*/
+
+.table-outer {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    border-color: cyan;
+    margin: auto auto;
+    margin-top: 40px;
+}
+
+tr {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.table__heading {
+    background-color: yellowgreen;
+    color: black;
+}
+
+td, th {
+    padding: 4px 8px;
+}

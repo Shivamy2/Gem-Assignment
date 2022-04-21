@@ -2,11 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keyword" content="html, javascript, css">
+    <meta name="description" content="This is assignment 0">
+    <meta name="author" content="Shivam Yadav">
+    <meta http-equiv="X-UA-Compatible" content="mIE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" media="screen and (min-width: 320px">
+    <link rel="stylesheet" href="mediaquery.css" media="screen and (min-width: 768px)">
     <title>Assignment 0</title>
 </head>
+<!-- class named, using BEM(Block, Element, Modifier) convention -->
 <body>
-    
+    <div class="outer-box">
+        <div class="form">
+            <div class="form__title">
+                <div class="form__title__inner-box">
+                    <h2 class="form__title__inner-box__content">Student Registration Form</h1>
+                </div>
+            </div>
+            <form method="post" class="form__body">
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="name">Name <span class="form__body__label-span">:</span></label>
+                    <div>
+                        <input placeholder="Enter full name" type="text" name="name" id="name">
+                    </div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="fatherName">Father's Name <span class="form__body__label-span">:</span></label>
+                    <div><input type="text" name="fatherName" placeholder="Enter Father's name" id="father-name"></div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="motherName">Mother's Name <span class="form__body__label-span">:</span></label>
+                    <div><input type="text" name="motherName" placeholder="Enter Mother's name" id="mother-name"></div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="phoneNumber">Phone Number <span class="form__body__label-span">:</span></label>
+                    <div><input type="number" name="phoneNumber" placeholder="+91XXXXXXXXXX" id="phone-number"></div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="email">Email <span class="form__body__label-span">:</span></label>
+                    <div><input type="email" name="email" id="email" placeholder="Email"></div>
+                </div>
+                <div class="form__body__fields-layout">
+                    
+                    <label class="form__body__label" for="gender">Gender <span class="form__body__label-span">:</span></label>
+                    
+                    <div>
+                        <div class="form__body__label__radio-first">
+                            <input type="radio" name="male" id="male">
+                            <label class="form__body__label" for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="female" id="female">
+                            <label class="form__body__label" for="female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="other" id="other">
+                            <label class="form__body__label" for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="dob">Date Of Birth <span class="form__body__label-span">:</span></label>
+                    <div>
+                        <input type="date" min="1980-01-01" max="2022-04-20">
+                    </div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="address">Address <span class="form__body__label-span">:</span></label>
+                    <div><input type="text" name="address" id="address" placeholder="Street - House - Road"></div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="boodGroup">Blood Group <span class="form__body__label-span">:</span></label>
+                    <div>
+                        <select name="blookGroup" id="bood-group">
+                            <option value="select">Select</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="department">Department <span class="form__body__label-span">:</span></label>
+                    <div>
+                        <div class="form__body__label__radio-first">
+                            <input type="radio" name="cse" id="cse">
+                            <label class="form__body__label" for="cse">CSE</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="ece" id="ece">
+                            <label class="form__body__label" for="eee">ECE</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="bba" id="bba">
+                            <label class="form__body__label" for="bba">BBA</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="Course">Course <span class="form__body__label-span">:</span></label>
+                    <div>
+                        <div class="form__body__label__radio-first">
+                            <input type="radio" name="c" id="c">
+                            <label class="form__body__label" for="c">C</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="cpp" id="cpp">
+                            <label class="form__body__label" for="cpp">C++</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="java" id="java">
+                            <label class="form__body__label" for="java">Java</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="ai" id="ai">
+                            <label class="form__body__label" for="ai">AI</label>
+                        </div>
+                       <div>
+                            <input type="radio" name="ml" id="ml">
+                            <label class="form__body__label" for="ml">Machine Learning</label>
+                       </div>
+                       <div>
+                            <input type="radio" name="robotics" id="robotics">
+                            <label class="form__body__label" for="robotics">Robotics</label>
+                       </div>
+                    </div>
+                </div>
+                <div class="form__body__fields-layout">
+                    <label class="form__body__label" for="Photo">Photo <span class="form__body__label-span">:</span></label>
+                    <div><input type="file" name="photo" id="photo"></div>
+                </div>
+                <div class="form__body__submit">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form__action">
+        <div>
+            <a href="table.htm">Enter Table Section</a>
+        </div>
+        <div>
+            <a href="demo.htm">Sample Demo of position, display, etc</a>
+        </div>
+    </div>
 </body>
 </html>
