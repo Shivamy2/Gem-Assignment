@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Demo</title>
 </head>
 <body>
-    This is demo
+    <div class="demo-outer">
+        <h1>Demo Of</h1>
+        <div class="position">
+            <h2>Position</h2>
+            <div>
+                <h4 class="demo__label-title">Absolute
+                    <div class="demo__label__position-absolute">
+                        <div class="demo__label__position-absolute__absolute-box">This is absolute</div>
+                    </div>
+                </h4>
+                <h4 class="demo__label-title">Relative
+                    <div class="demo__label__position-relative">
+                        <div class="demo__label__position-relative__relative-box"></div>
+                    </div>
+                </h4>
+                <h4 class="demo__label-title">Fixed
+                    <div class="demo__label__position-fixed">
+                        <p>Represented at the top of the screen</p>
+                        <div class="demo__label__position-fixed__fixed-box">
+                        </div>
+                    </div>
+                </h4>
+                <h4 class="demo__label-title">Static
+                    <div class="demo__label__position-static__static-box">This is static block</div>
+                </h4>
+            </div>
+        </div>
+        <div class="float">
+            <h2>Float</h2>
+            <div>
+                <h4 class="demo__label-title">Right
+                </h4>
+                    <div class="demo__label-float-right">
+                        <img src="demoImg.avif" alt="guitarist">
+                    </div>
+                <h4 class="demo__label-title">Left
+                </h4>
+                    <div class="demo__label-float-left">
+                        <img src="demoImg.avif" alt="guitarist">
+                    </div>
+            </div>
+        </div>
+        <div class="display">
+            <h2>Display</h2>
+            <div>
+                <h4 class="demo__label-title">Inline</h4>
+                <div class="demo__label-display__inline">This is block <p>but converted into inline</p></div>
+                <h4 class="demo__label-title">Block</h4>
+                <div class="demo__label-display__block">This is block <span>but converted into block</span></div>
+                <h4 class="demo__label-title">Flex</h4>
+                <div class="demo__label-display__flex">
+                    <div class="demo__label-display__flex-row">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="demo__label-display__flex-column">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <h4 class="demo__label-title">Grid</h4>
+                <div class="demo__label-display__grid">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="visibility">
+            <h2>Visibility</h2>
+            <div>
+                <h4 class="demo__label-title">Visible</h4>
+                <div class="demo__label__visibility-visible">I am visible</div>
+                <h4 class="demo__label-title">Hidden</h4>
+                <div class="demo__label__visibility-hidden"></div>
+                Above is hidden block, still takes up space
+            </div>
+        </div>
+    </div>
 </body>
 </html>

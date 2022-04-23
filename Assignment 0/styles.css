@@ -7,11 +7,17 @@ h2 {
     font-size: large;
 }
 
-.outer-box {
-    padding: 15px;
+header {
     position: sticky;
     top: 0;
-    background-color: white;
+    height: 10vh;
+    background-color: red;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.outer-box {
+    padding: 15px;
 }
 
 .form {
@@ -19,7 +25,6 @@ h2 {
     inset: auto auto; */
     /* position: sticky; */
     /* top: 0; */
-    padding: 20px;
     /* height: 100%; */
     background-color: #20bac2;
     /* position: fixed; */
@@ -156,4 +161,195 @@ tr {
 
 td, th {
     padding: 4px 8px;
+}
+
+/* css for demo */
+
+.demo-outer > h1 {
+    color: red;
+}
+
+.demo-outer > div > h2 {
+    color: blueviolet;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.demo__label__position-absolute {
+    position: absolute;
+    z-index: 5;
+    top: 110px;
+    left: 100px;
+    background-color: black;
+    height: 10vh;
+    width: 10vw;
+}
+
+.demo__label__position-absolute__absolute-box {
+    text-align: center;
+    margin-top: 8px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.demo__label__position-relative {
+    position: relative;
+    background-color: yellow;
+    height: 30vh;
+    width: 600px;
+}
+
+.demo__label__position-relative__relative-box {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: red;
+    height: 10vh;
+    width: 10vw;
+}
+
+.demo__label__position-fixed {
+    position: relative;
+    background-color: yellow;
+    width: 600px;
+}
+
+.demo__label__position-fixed__fixed-box {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    background-color: red;
+    height: 7vh;
+    width: 30vw;
+    text-align: center;
+}
+
+.demo__label__position-static__static-box {
+    position: static;
+    background-color: cyan;
+    border:  3px solid red;
+    width: 600px;
+}
+
+.demo__label-title {
+    margin-top: 25px;
+}
+
+.demo__label-float-right {
+    height: 30vh;
+    width: 600px;
+    background-color: purple;
+}
+
+.demo__label-float-right > img {
+    float: right;
+    height: 50%;
+    width: 20%;
+}
+
+.demo__label-float-left {
+    height: 30vh;
+    width: 600px;
+    background-color: green;
+}
+
+.demo__label-float-left > img {
+    float: left;
+    height: 50%;
+    width: 20%;
+}
+
+.demo__label-display__inline {
+    padding: 8px;
+    width: 600px;
+    font-weight: 600;
+    background-color: yellowgreen;
+}
+
+.demo__label-display__inline > p {
+    display: inline;
+    color: red;
+}
+
+.demo__label-display__block {
+    padding: 8px;
+    width: 600px;
+    font-weight: 600;
+    background-color: yellowgreen;
+}
+
+.demo__label-display__block > span {
+    display: block;
+    color: red;
+}
+
+.demo__label-display__flex {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    width: 600px;
+    background-color: black;
+    padding-top: 20px;
+}
+
+.demo__label-display__flex-row {
+    /* margin-left: 40px; */
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 30%;
+    background-color: white;
+}
+
+.demo__label-display__flex-row > div:first-child {
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}
+
+.demo__label-display__flex-column {    
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 100px; */
+    height: 50%;
+    width: 30%;
+    background-color: white;
+}
+
+.demo__label-display__flex-column > div:first-child {
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
+
+.demo__label-display__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 5px;
+    height: 30vh;
+    width: 600px;
+    background-color: blueviolet;
+}
+
+.demo__label-display__grid > div {
+    /* height: 55%;
+    width: 25%; */
+    background-color: red;
+}
+
+.demo__label__visibility-visible {
+    visibility: visible;
+    height: 20vh;
+    width: 600px;
+    background-color: purple;
+}
+
+.demo__label__visibility-hidden {
+    visibility: hidden;
+    height: 20vh;
+    width: 600px;
+    background-color: purple;
 }
