@@ -216,7 +216,23 @@
     cursor: pointer;
 }
 
-.css-transition__card:hover {}
+.css-transition__card--upper>img:hover {
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.41s;
+    transform: scale(1.1);
+}
+
+.css-transition__card--lower img:hover {
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.41s;
+    transform: rotate(360deg);
+}
+
+.css-transition__card--lower:hover {
+    background-color: rebeccapurple;
+}
 
 .css-transition__card--upper>img {
     border-top-left-radius: 25px;
