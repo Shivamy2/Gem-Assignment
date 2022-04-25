@@ -121,3 +121,77 @@
     font-size: medium;
     color: purple;
 }
+
+
+/* CSS Combinators */
+
+.css-combinators {
+    margin: 10px auto;
+    width: max-content;
+}
+
+.css-combinators__descendant {
+    font-size: 1.2rem;
+    padding: 25px;
+    background-color: yellowgreen;
+    border-radius: 25px;
+}
+
+.css-combinators__descendant>div p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 10px;
+    width: max-content;
+    background-color: aqua;
+    color: red;
+}
+
+.css-combinators__descendant>p:first-child {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: red;
+}
+
+.css-combinators__child {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 25px;
+    background-color: yellowgreen;
+    border-radius: 25px;
+}
+
+.css-combinators__child>p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 10px;
+    width: max-content;
+    background-color: aqua;
+    color: red;
+}
+
+.css-combinators__general-sibling {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 25px;
+    background-color: yellowgreen;
+    border-radius: 25px;
+}
+
+.css-combinators__general-sibling-first~p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 10px;
+    width: max-content;
+    background-color: purple;
+    color: red;
+}

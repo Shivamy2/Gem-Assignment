@@ -11,7 +11,36 @@
 
 <body>
     <div class="css-combinators">
+        <div class="css-combinators__descendant">
+            <p>Descendant Selector</p>
+            <div>
+                <p>This is inner 1st paragraph</p>
+                <p>This is inner 2nd paragraph</p>
+            </div>
+            <p>This is outer 1st paragraph</p>
+            <p>This is outer 2nd paragraph</p>
+        </div>
 
+        <div class="css-combinators__child">
+            <p>Child Selector</p>
+            <div>
+                <p>This is inner 1st paragraph</p>
+                <p>This is inner 2nd paragraph</p>
+            </div>
+            <p>This is outer 1st paragraph</p>
+            <p>This is outer 2nd paragraph</p>
+        </div>
+
+        <div class="css-combinators__general-sibling">
+            <div class="css-combinators__general-sibling-first"></div>
+            <p>General Sibling Selector</p>
+            <div>
+                <p>This is inner 1st paragraph</p>
+                <p>This is inner 2nd paragraph</p>
+            </div>
+            <p>This is outer 1st paragraph</p>
+            <p>This is outer 2nd paragraph</p>
+        </div>
     </div>
 </body>
 
