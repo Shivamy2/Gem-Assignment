@@ -83,3 +83,41 @@
 
 
 /* CSS Chaining Concept */
+
+.css-chaining {
+    min-height: 100vh;
+    background-color: #dfdfdf;
+    text-align: center;
+    padding: 25px;
+}
+
+.css-chaining>div {
+    margin-top: 25px;
+}
+
+.css-chaining__first {
+    background-color: red;
+    height: 200px;
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: yellow;
+    border: 8px solid rebeccapurple;
+    border-style: dotted;
+}
+
+.css_chaining_second {
+    border-style: double;
+}
+
+.css_chaining_third {
+    color: red;
+    background-color: yellow;
+}
+
+.css_chaining_third>p {
+    margin-top: 20px;
+    font-size: medium;
+    color: purple;
+}
