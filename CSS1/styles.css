@@ -50,8 +50,7 @@ label {
     font-weight: 700;
 }
 
-
-label > span {
+label>span {
     font-weight: 500;
 }
 
@@ -61,16 +60,18 @@ label > span {
     margin-top: 10px;
 }
 
-.form__body__fields-layout > label {
+.form__body__fields-layout>label {
     flex: 0.3;
 }
 
-.form__body__fields-layout > div {
+.form__body__fields-layout>div {
     display: flex;
     flex-direction: column;
 }
 
-.form__body__fields-layout > input, .form__body__fields-layout > select, .form__body__fields-layout > div {
+.form__body__fields-layout>input,
+.form__body__fields-layout>select,
+.form__body__fields-layout>div {
     display: flex;
     flex: 0.7;
 }
@@ -84,11 +85,15 @@ input[type=radio] {
     margin-top: -10px;
 }
 
-.form__body__fields-layout > div > div > input {
+.form__body__fields-layout>div>div>input {
     margin-top: 10px;
 }
 
-input[type=text], input[type=email], input[type=number] , select, input[type=date] {
+input[type=text],
+input[type=email],
+input[type=number],
+select,
+input[type=date] {
     width: 250px;
 }
 
@@ -124,13 +129,14 @@ button {
     padding: 40px 80px;
 }
 
-.form__action > div > a {
+.form__action>div>a {
     color: red;
 }
 
-.form__action > div {
+.form__action>div {
     margin-top: 10px;
 }
+
 
 /*css for table*/
 
@@ -159,17 +165,19 @@ tr {
     color: black;
 }
 
-td, th {
+td,
+th {
     padding: 4px 8px;
 }
 
+
 /* css for demo */
 
-.demo-outer > h1 {
+.demo-outer>h1 {
     color: red;
 }
 
-.demo-outer > div > h2 {
+.demo-outer>div>h2 {
     color: blueviolet;
     margin-top: 15px;
     font-size: 1.3rem;
@@ -229,7 +237,7 @@ td, th {
 .demo__label__position-static__static-box {
     position: static;
     background-color: cyan;
-    border:  3px solid red;
+    border: 3px solid red;
     width: 600px;
 }
 
@@ -243,7 +251,7 @@ td, th {
     background-color: purple;
 }
 
-.demo__label-float-right > img {
+.demo__label-float-right>img {
     float: right;
     height: 50%;
     width: 20%;
@@ -255,7 +263,7 @@ td, th {
     background-color: green;
 }
 
-.demo__label-float-left > img {
+.demo__label-float-left>img {
     float: left;
     height: 50%;
     width: 20%;
@@ -268,7 +276,7 @@ td, th {
     background-color: yellowgreen;
 }
 
-.demo__label-display__inline > p {
+.demo__label-display__inline>p {
     display: inline;
     color: red;
 }
@@ -280,7 +288,7 @@ td, th {
     background-color: yellowgreen;
 }
 
-.demo__label-display__block > span {
+.demo__label-display__block>span {
     display: block;
     color: red;
 }
@@ -303,13 +311,13 @@ td, th {
     background-color: white;
 }
 
-.demo__label-display__flex-row > div:first-child {
+.demo__label-display__flex-row>div:first-child {
     height: 100%;
     width: 50%;
     background-color: red;
 }
 
-.demo__label-display__flex-column {    
+.demo__label-display__flex-column {
     display: flex;
     flex-direction: column;
     /* margin-left: 100px; */
@@ -318,7 +326,7 @@ td, th {
     background-color: white;
 }
 
-.demo__label-display__flex-column > div:first-child {
+.demo__label-display__flex-column>div:first-child {
     height: 50%;
     width: 100%;
     background-color: red;
@@ -334,7 +342,7 @@ td, th {
     background-color: blueviolet;
 }
 
-.demo__label-display__grid > div {
+.demo__label-display__grid>div {
     /* height: 55%;
     width: 25%; */
     background-color: red;

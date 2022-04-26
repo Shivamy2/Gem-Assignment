@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.form {
+    background-color: #20bac2;
+}
+
+.form__title__inner-box {
+    border-style: double;
+}
+
+.table__description {
+    font-size: 0.9rem;
+    border: 2px solid purple;
+    padding: 1em;
+}
+
+th {
+    padding: 8px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .table__border {
+        border: 2px solid black;
+    }
+}

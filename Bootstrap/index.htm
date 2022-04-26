@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Conversion</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="row col-lg">
+                <div class="col p-0">
+                    <div class="p-3 text-center fs-3 fw-bold text-primary border border-2 border-dark">FORM</div>
+                    <div class="border border-2 border-dark p-2">
+                        <div class="form">
+                            <div class="form__title">
+                                <div class="p-3 border border-dark form__title__inner-box">
+                                    <h2 class="fw-bold text-center">Student Registration Form</h1>
+                                </div>
+                            </div>
+                            <form method="post" class="mt-3">
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold text-right w-50" for="name"><p class="float-end">Name <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3">
+                                        <input placeholder="Enter full name" type="text" name="name" id="name">
+                                    </div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="fatherName"><p class="float-end">Father's Name <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3"><input type="text" name="fatherName" placeholder="Enter Father's name" id="father-name"></div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="motherName"><p class="float-end">Mother's Name <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3"><input type="text" name="motherName" placeholder="Enter Mother's name" id="mother-name"></div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="phoneNumber"><p class="float-end">Phone Number <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3"><input type="number" name="phoneNumber" placeholder="+91XXXXXXXXXX" id="phone-number"></div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="email"><p class="float-end">Email <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3"><input type="email" name="email" id="email" placeholder="Email"></div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+
+                                    <label class="h6 fw-bold w-50" for="gender"><p class="float-end">Gender <span class="fw-normal">:</span></p></label>
+
+                                    <div class="mx-3 d-md-flex">
+                                        <div class="form__body__label__radio-first">
+                                            <input type="radio" name="male" id="male">
+                                            <label class="h6 fw-bold" for="male">Male</label>
+                                        </div>
+                                        <div class="mx-md-2">
+                                            <input type="radio" name="female" id="female">
+                                            <label class="h6 fw-bold" for="female">Female</label>
+                                        </div>
+                                        <div class="mx-md-2">
+                                            <input type="radio" name="other" id="other">
+                                            <label class="h6 fw-bold" for="other">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="dob"><p class="float-end">Date Of Birth <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3">
+                                        <input type="date" min="1980-01-01" max="2022-04-20">
+                                    </div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="address"><p class="float-end">Address <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3"><input type="text" name="address" id="address" placeholder="Street - House - Road"></div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="boodGroup"><p class="float-end">Blood Group <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3">
+                                        <select name="blookGroup" id="bood-group">
+                                                <option value="select">Select</option>
+                                                <option value="A+">A+</option>
+                                                <option value="A-">A-</option>
+                                                <option value="B+">B+</option>
+                                                <option value="B-">B-</option>
+                                                <option value="O+">O+</option>
+                                                <option value="O-">O-</option>
+                                                <option value="AB+">AB+</option>
+                                                <option value="AB-">AB-</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="department"><p class="float-end">Department <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3 d-md-flex">
+                                        <div class="form__body__label__radio-first">
+                                            <input type="radio" name="cse" id="cse">
+                                            <label class="h6 fw-bold" for="cse">CSE</label>
+                                        </div>
+                                        <div class="mx-md-2">
+                                            <input type="radio" name="ece" id="ece">
+                                            <label class="h6 fw-bold" for="eee">ECE</label>
+                                        </div>
+                                        <div class="mx-md-2">
+                                            <input type="radio" name="bba" id="bba">
+                                            <label class="h6 fw-bold" for="bba">BBA</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex">
+                                    <label class="h6 fw-bold w-50" for="Course"><p class="float-end">Course <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3 d-lg-flex">
+                                        <div class="form__body__label__radio-first">
+                                            <input type="radio" name="c" id="c">
+                                            <label class="h6 fw-bold" for="c">C</label>
+                                        </div>
+                                        <div class="mx-lg-2">
+                                            <input type="radio" name="cpp" id="cpp">
+                                            <label class="h6 fw-bold" for="cpp">C++</label>
+                                        </div>
+                                        <div class="mx-lg-2">
+                                            <input type="radio" name="java" id="java">
+                                            <label class="h6 fw-bold" for="java">Java</label>
+                                        </div>
+                                        <div class="mx-lg-2">
+                                            <input type="radio" name="ai" id="ai">
+                                            <label class="h6 fw-bold" for="ai">AI</label>
+                                        </div>
+                                        <div class="mx-lg-2">
+                                            <input type="radio" name="ml" id="ml">
+                                            <label class="h6 fw-bold" for="ml">ML</label>
+                                        </div>
+                                        <div class="mx-lg-2">
+                                            <input type="radio" name="robotics" id="robotics">
+                                            <label class="h6 fw-bold" for="robotics">Robotics</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__body__fields-layout mt-3 d-flex flex-column flex-md-row">
+                                    <label class="h6 fw-bold w-50" for="Photo"><p class="float-end">Photo <span class="fw-normal">:</span></p></label>
+                                    <div class="mx-3 text-center text-md-start"><input type="file" name="photo" id="photo"></div>
+                                </div>
+                                <div class="form__body__submit text-center mt-2">
+                                    <button type="submit" class="text-decoration-none px-2 py-1 bg-primary border-1 border-danger rounded">Submit</button>
+                                    <button type="reset" class="text-decoration-none px-2 py-1 bg-danger border-1 border-primary rounded">Reset</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0 table__border">
+                    <div class="p-3 text-center fs-3 fw-bold text-primary border border-2 border-dark">TABLE</div>
+                    <div class="table-outer m-3">
+                        <table cellspacing="4" class="border border-2 border-primary ">
+                            <tr class="table__heading bg-danger text-white fst-italic">
+                                <th class="table__description">SNo</th>
+                                <th class="table__description">Name</th>
+                                <th class="table__description">Phone Number</th>
+                                <th class="table__description">Gender</th>
+                                <th class="table__description">City</th>
+                                <th class="table__description">Hobbies</th>
+                            </tr>
+                            <tr>
+                                <td class="table__description">1</td>
+                                <td class="table__description">Vishal Malik</td>
+                                <td class="table__description">8976565342</td>
+                                <td class="table__description">Male</td>
+                                <td class="table__description">Gurugram</td>
+                                <td class="table__description">Personality Development</td>
+                            </tr>
+                            <tr>
+                                <td class="table__description">2</td>
+                                <td class="table__description">Shivam Yadav</td>
+                                <td class="table__description">7007723344</td>
+                                <td class="table__description">Male</td>
+                                <td class="table__description">Renukoot</td>
+                                <td class="table__description">Singing</td>
+                            </tr>
+                            <tr>
+                                <td class="table__description">3</td>
+                                <td class="table__description">Abhishek Kumar</td>
+                                <td class="table__description">9876543213</td>
+                                <td class="table__description">Male</td>
+                                <td class="table__description">Panchkula</td>
+                                <td class="table__description">Chess</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
